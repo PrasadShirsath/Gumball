@@ -29,9 +29,9 @@ exports.putCall=function(req,res){
 	
 	var countGumballs=req.body.countGumballs;
 	var id=parseInt(req.params.id);
-	var userName="cmpe281rucha";
-	var password="rucha";
-	MongoClient.connect("mongodb://"+userName+":"+password+"@ds045970.mongolab.com:45970/prasaddb", function(err, db) {
+	var userName="prasad";
+	var password="prasad";
+	MongoClient.connect("mongodb://"+userName+":"+password+"@ds045970.mongolab.com:45970/prasaddb/gumball/1", function(err, db) {
 		  if(!err) {
 		    console.log("Connected to DB");
 		    var collection=db.collection('gumball');
